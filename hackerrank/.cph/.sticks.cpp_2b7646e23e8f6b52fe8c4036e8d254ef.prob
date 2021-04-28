@@ -1,1 +1,0 @@
-{"name":"Local: sticks","url":"/home/gokul/Problems/hackerrank/sticks.cpp","tests":[{"id":1606574702753,"input":"8\n8 8 14 10 3 5 14 12","output":"8\n7\n6\n4\n3\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/gokul/Problems/hackerrank/sticks.cpp","group":"local","local":true}

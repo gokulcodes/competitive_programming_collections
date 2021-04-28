@@ -1,1 +1,0 @@
-{"name":"Local: lapindrome","url":"/home/gokul/Problems/codechef/lapindrome.cpp","tests":[{"id":1605865032549,"input":"6\ngaga\nabcde\nrotor\nxyzxy\nabbaab\nababc","output":"YES\nNO\nYES\nYES\nNO\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/gokul/Problems/codechef/lapindrome.cpp","group":"local","local":true}
