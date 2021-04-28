@@ -1,0 +1,1 @@
+{"name":"Local: removeSmallest","url":"/home/gokul/Problems/codeforces/removeSmallest.cpp","tests":[{"id":1606847157856,"input":"2\n4\n32 31 31 33\n5\n47 49 48 48 50","output":"YES\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/gokul/Problems/codeforces/removeSmallest.cpp","group":"local","local":true}
