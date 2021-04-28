@@ -1,7 +1,3 @@
-// AUTHOR: GOKULVARADAN
-// CREATED AT: 28/04/2021 7:30PM
-// ABOUT: COMPETITIVE PROGRAMMING TEMPLATE
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -12,13 +8,13 @@ typedef long long LL;
 #define mem(a, b) memset(a, b, sizeof(a))
 #define REP(i, j, range, inc) for(int i = j; i < range; i+=inc)
 #define RREP(i, j, range, inc) for(int i = j; i >= range; i-=inc)
-#define all(a) a.begin(), a.end()
-#define rall(a) a.end(), a.begin()
+#define all(a) (a.begin(), a.end())
+#define rall(a) (a.end(), a.begin())
 #define ITR(it, i, j) for(auto it = i; it != j; it++)
 #define print(a) cout << a << '\n'
 #define printd(a,b) cout << a << " " << b << '\n'
 #define printt(a,b,c) cout << a << " " << b << " " << c << '\n'
-#define debl(arr) REP(i, 0, (int)arr.size(), 1) cout << arr[i] << br;
+#define debl(arr) REP(i, 0, (int)arr.size(), 1) cout << arr[i] << ' ';
 #define deb(name, a) cout << name << " " << a << br;
 #define MP make_pair
 #define PB push_back
@@ -71,27 +67,29 @@ uint64 mod_expo(uint64 n, uint64 exp, LL p = MOD){
 	return res;
 }
 
-function<int(int, int)> gcd = [](int a, int b) {
-    return b == 0 ? a : gcd(b, a % b);
-};
+int gcd(int a, int b){
+	if(b == 0) return a;
+	return gcd(b, a%b);
+}
 
 //==========================================//
 
-function<int(string, int, int)> palindrome = [](string s, int a, int b) {
-    if(a == b) return 1;
-    if(s[a] != s[b]) return 0;
-    if(a >= b) return 1;
-
-    palindrome(s, a+1, b-1);
-	return 1;
-};
-
-void solve(){
-	
-	// TODO
-	// solve cp problems
+void solve(){	
+	LL n = 0, ans = 0;
+	cin >> n;		
+	if(n%2050 != 0) {
+	    print(-1);
+	    return;
+	}
+	else{
+	    n /= 2050;
+	    while(n){
+	        ans += n%10;
+	        n /= 10;
+	    }
+	    print(ans);
+	}
 }
-
 
 int main(){
 	ios_base::sync_with_stdio(false);
@@ -119,7 +117,7 @@ int main(){
 
 	std::time_t end_time = std::chrono::system_clock::to_time_t(end);
 
-	cout << "Duration: " << elapsed_seconds.count() << "s\n";
+	// cout << "Duration: " << elapsed_seconds.count() << "s\n";
 
 	return 0;
 }

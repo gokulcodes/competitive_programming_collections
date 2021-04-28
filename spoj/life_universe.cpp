@@ -1,7 +1,3 @@
-// AUTHOR: GOKULVARADAN
-// CREATED AT: 28/04/2021 7:30PM
-// ABOUT: COMPETITIVE PROGRAMMING TEMPLATE
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -87,9 +83,11 @@ function<int(string, int, int)> palindrome = [](string s, int a, int b) {
 };
 
 void solve(){
-	
-	// TODO
-	// solve cp problems
+    int n;
+	while(cin >> n){
+        if(n == 42) break;
+        print(n);
+    }
 }
 
 
@@ -97,21 +95,21 @@ int main(){
 	ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-	#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-	#endif
+	// #ifndef ONLINE_JUDGE
+	// freopen("input.txt", "r", stdin);
+	// freopen("output.txt", "w", stdout);
+	// #endif
 
-	int ts;
-	cin >> ts;
+	// int ts;
+	// cin >> ts;
 
 	std::chrono::time_point<std::chrono::system_clock> start, end;
 
 	start = std::chrono::system_clock::now();
 
-	while(ts--){
+	// while(ts--){
 		solve();
-	}
+	// }
 
 	end = std::chrono::system_clock::now();
 
@@ -119,7 +117,7 @@ int main(){
 
 	std::time_t end_time = std::chrono::system_clock::to_time_t(end);
 
-	cout << "Duration: " << elapsed_seconds.count() << "s\n";
+	// cout << "Duration: " << elapsed_seconds.count() << "s\n";
 
 	return 0;
 }
