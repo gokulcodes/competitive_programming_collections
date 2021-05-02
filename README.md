@@ -1,3 +1,3 @@
-# competitive_programming_collections
+# Competitive Programming Collections
 
-Codeforces Profile: [gokulvaradan](https://codeforces.com/profile/gokulvaradan)
+Codeforces Handle: [gokulvaradan](https://codeforces.com/profile/gokulvaradan)
