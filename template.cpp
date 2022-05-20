@@ -1,5 +1,5 @@
 // AUTHOR: GOKULVARADAN
-// CREATED AT: 28/04/2021 7:30PM
+// CREATED AT: 20/05/2022 5:30PM
 // ABOUT: COMPETITIVE PROGRAMMING TEMPLATE
 
 #include <bits/stdc++.h>
@@ -21,7 +21,7 @@ typedef long long LL;
 #define show(a, b) for(auto it = a; it != b; it++) cout << *it << " ";
 #define printd(a,b) cout << a << " " << b << '\n'
 #define printt(a,b,c) cout << a << " " << b << " " << c << '\n'
-#define debl(arr) rep(i, 0, (int)arr.size(), 1) cout << arr[i] << " ";
+#define debl(arr, start) rep(i, start, (int)arr.size(), 1) cout << arr[i] << (arr.size() - 1 == i ? '\n' : ' ');
 #define deb(name, a) cout << name << " " << a << br;
 #define mp make_pair
 #define pb push_back
@@ -89,8 +89,8 @@ int checkPrime(int n){
 // ================================================ //
 
 void solve(){
-	// TODO
-	// solve cp problems
+	vi v = {1, 2, 3, 4};
+	debl(v, 3);
 }
 
 int main(){
@@ -102,8 +102,8 @@ int main(){
 	freopen("output.txt", "w", stdout);
 	#endif
 
-	int ts;
-	cin >> ts;
+	int ts = 1;
+	// cin >> ts;
 
 	std::chrono::time_point<std::chrono::system_clock> start, end;
 
