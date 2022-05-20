@@ -89,8 +89,8 @@ int checkPrime(int n){
 // ================================================ //
 
 void solve(){
-	vi v = {1, 2, 3, 4};
-	debl(v, 3);
+	// TODO
+	// PRACTICE! PRACTICE! PRACTICE!
 }
 
 int main(){
@@ -103,7 +103,7 @@ int main(){
 	#endif
 
 	int ts = 1;
-	// cin >> ts;
+	cin >> ts;
 
 	std::chrono::time_point<std::chrono::system_clock> start, end;
 
